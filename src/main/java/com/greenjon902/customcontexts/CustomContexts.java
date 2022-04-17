@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
 import java.util.logging.Logger;
 
 public final class CustomContexts extends JavaPlugin {
@@ -28,6 +29,8 @@ public final class CustomContexts extends JavaPlugin {
 
         customContextCalculator = new CustomContextsCalculator();
         luckPermsApi.getContextManager().registerCalculator(customContextCalculator);
+
+        Objects.requireNonNull(getCommand("customcontexts")).setExecutor(new CustomContextsCommand());
     }
 
     @Override
