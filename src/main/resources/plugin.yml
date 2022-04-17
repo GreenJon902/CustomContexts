@@ -19,11 +19,8 @@ permissions:
     default: op
     children:
       customcontexts.add: True
-      customcontexts.modify: True
       customcontexts.remove: True
   add:
-    default: op
-  modify:
     default: op
   remove:
     default: op

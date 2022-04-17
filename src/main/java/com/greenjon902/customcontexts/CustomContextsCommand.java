@@ -24,9 +24,6 @@ public class CustomContextsCommand implements TabExecutor {
             if (sender.hasPermission("customcontexts.add")) {
                 items.add("add");
             }
-            if (sender.hasPermission("customcontexts.modify")) {
-                items.add("modify");
-            }
             if (sender.hasPermission("customcontexts.remove")) {
                 items.add("remove");
             }
