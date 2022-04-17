@@ -1,0 +1,9 @@
+name: CustomContexts
+version: '${project.version}'
+main: com.greenjon902.customcontexts.customcontexts
+api-version: 1.18
+load: STARTUP
+depend: [ Luckperms ]
+authors: [ GreenJon902 ]
+description: Adding customisable contexts to luckperms
+website: https://github.com/GreenJon902
