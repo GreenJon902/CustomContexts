@@ -2,7 +2,7 @@ package com.greenjon902.customcontexts;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class customcontexts extends JavaPlugin {
+public final class CustomContexts extends JavaPlugin {
 
     @Override
     public void onEnable() {
