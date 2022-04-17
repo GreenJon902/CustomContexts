@@ -6,7 +6,7 @@ import net.luckperms.api.context.ContextSet;
 import org.bukkit.entity.Player;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class CustomContextCalculator implements ContextCalculator<Player> {
+public class CustomContextsCalculator implements ContextCalculator<Player> {
     @Override
     public void calculate(@NonNull Player target, @NonNull ContextConsumer consumer) {
     }

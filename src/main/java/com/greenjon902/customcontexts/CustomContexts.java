@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public final class CustomContexts extends JavaPlugin {
     Logger logger = getLogger();
-    CustomContextCalculator customContextCalculator;
+    CustomContextsCalculator customContextCalculator;
 
     LuckPerms luckPermsApi;
 
@@ -26,7 +26,7 @@ public final class CustomContexts extends JavaPlugin {
             return;
         }
 
-        customContextCalculator = new CustomContextCalculator();
+        customContextCalculator = new CustomContextsCalculator();
         luckPermsApi.getContextManager().registerCalculator(customContextCalculator);
     }
 
