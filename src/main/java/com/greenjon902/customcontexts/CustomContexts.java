@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
 import java.util.Objects;
 import java.util.logging.Logger;
 
@@ -13,6 +14,8 @@ public final class CustomContexts extends JavaPlugin {
     CustomContextsCalculator customContextCalculator;
 
     LuckPerms luckPermsApi;
+
+    public ArrayList<String> contexts;
 
     @Override
     public void onEnable() {

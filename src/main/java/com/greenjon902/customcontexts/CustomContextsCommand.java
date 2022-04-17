@@ -1,9 +1,11 @@
 package com.greenjon902.customcontexts;
 
 import com.sun.org.apache.xerces.internal.xs.StringList;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,6 +29,9 @@ public class CustomContextsCommand implements TabExecutor {
             if (sender.hasPermission("customcontexts.remove")) {
                 items.add("remove");
             }
+        }
+        if (args.length == 2 && args[0].equals("remove")) {
+            items.addAll(JavaPlugin.getPlugin(CustomContexts.class).contexts);
         }
         return items;
     }
