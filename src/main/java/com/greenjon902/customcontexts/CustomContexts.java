@@ -49,7 +49,7 @@ public final class CustomContexts extends JavaPlugin {
             luckPermsApi = provider.getProvider();
             logger.info("Found API");
         } else {
-            logger.warning("CustomContexts could not fine LuckPerms");
+            logger.warning("CustomContexts could not find LuckPerms");
             return;
         }
 
